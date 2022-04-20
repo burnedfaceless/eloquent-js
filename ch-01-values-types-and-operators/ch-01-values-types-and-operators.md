@@ -5,7 +5,7 @@
 
 ## Values
 
-- *Values* - in JavaScript, a chunk that represents a piece of information (functions, numbers, strings)
+- *Values* - in JavaScript, a chunk of bits that represents a piece of information (functions, numbers, strings)
 
 ## Numbers
 
@@ -47,3 +47,31 @@
 "Lie on the ocean"
 'Float on the ocean'
 ````
+
+- Newlines are only allowed if the string is enclosed with backticks (`)
+  - Every other string must be single line
+
+````javascript
+console.log("A newline character is written like \"\\n\".")
+// A newline characgter is written like "\n".
+````
+
+- JavaScript uses 16 bits per string element - 2<sup>16</sup> different numbers
+- Unicode defines about twice as many numbers as that - some characters take up two "character positions" in JS strings
+
+````javascript
+console.log("con" + "cat" + "e" + "nate")
+// concatenate
+````
+
+- Strings written with single or double quotes behave much the same
+- Strings written with backticks are often called *template literals*
+  - span multiple lines
+  - embed other values inside of ````${} ````
+
+````javascript
+console.log(`half of 100 is ${100 / 2}`)
+// half of 100 is 50
+````
+
+## Unary Operators
