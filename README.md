@@ -7,7 +7,7 @@
 ## Why am I doing this?
 I wrote my first JavaScript function way back in 2011 when I took **CS 312** at The Univerisity of Alabama in Tuscaloosa. I was a hobbyist for a long time. I did not start coding seriously until 2017. I work with JavaScript a lot. I have been writing Node.js code for 3 years, I have been working with React.js for about a year. And I think this book will be a good way to fill in some gaps in my knowlege. 
 
-I know a lot of 'modern' JavaScript language features because I come across them in code. I've spent a lot of time learning JavaScript through building projects which I think is the best way to begin to learn a technology. With that being said there are aspects of the language that really confuse me - prototyeps are a feature that I do not understand. I'm at a place where I believe that I will get a lot out of a reference to the language. I've built a fair amount of projects using JavaScript and it seems like a good time to try and learn the language better.
+I know a lot of 'modern' JavaScript language features because I come across them in code. I've spent a lot of time learning JavaScript through building projects which I think is the best way to begin to learn a technology. With that being said there are aspects of the language that really confuse me - prototypes are a feature that I do not understand. I'm at a place where I believe that I will get a lot out of a reference to the language. I've built a fair amount of projects using JavaScript and it seems like a good time to try and learn the language better.
 
 ## Timeframe to Completion
 I started working on this book on April 20, 2022. I'm going to allocate about one hour every day to completing this book. 
