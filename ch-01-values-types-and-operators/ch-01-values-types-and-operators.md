@@ -144,7 +144,7 @@ to the type it thinks it needs
 - NaN is often produced from type coercions
 - JavaScript provides additional operators - `===` and `!==` to test for exact comparisons
 
-### Short-Circuiting of Logical Operators
+## Short-Circuiting of Logical Operators
 
 - The `||` operator will return the valuer to its left when that can be converted to true and it will return the value on its right otherwise
 ````javascript
