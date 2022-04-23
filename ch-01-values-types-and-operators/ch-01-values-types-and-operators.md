@@ -75,3 +75,91 @@ console.log(`half of 100 is ${100 / 2}`)
 ````
 
 ## Unary Operators
+
+- Operators that take two values are called *binary* operators
+- Operators that take one value are called *unary* operators
+
+````javascript
+console.log(typeof  4.5)
+// number
+console.log(typeof  'x')
+// string
+````
+
+## Boolean Values
+
+### Comparison
+
+````javascript
+console.log(3 > 2)
+// true
+console.log(3 < 2)
+// false
+````
+
+- There is only one value in JavaScript that is not equal to itself and that is NaN
+
+````javascript
+console.log(NaN == NaN)
+// false
+````
+
+### Logical Operators
+
+- *and* - represented by &&, only true if both of the values are true
+- *or* - represented by ||, true if either of the values give to it are true
+- *not* - written as an exclamation mark, it flips the value given to it
+- *ternary* - operators on 3 values, a more concise way to write an if else statement
+
+````javascript
+// and
+console.log(true && false)
+// false
+console.log(true && true)
+// true
+
+// or
+console.log(false || true)
+// true
+console.log(false || false)
+// false
+
+// ternary
+console.log(true ? 1 : 2)
+// 1
+console.log(false ? 1 : 2)
+// 2
+````
+
+## Empty Values
+
+- Two special values used to denote the absence of a *meaningful* value
+  - null
+  - undefined
+
+## Automatic Type Conversion
+
+- *type coercion* - when an operator is applied to a wrong type of value JavaScript converts that value
+to the type it thinks it needs
+- NaN is often produced from type coercions
+- JavaScript provides additional operators - `===` and `!==` to test for exact comparisons
+
+### Short-Circuiting of Logical Operators
+
+- The `||` operator will return the valuer to its left when that can be converted to true and it will return the value on its right otherwise
+````javascript
+console.log(null || 'user')
+// user
+console.log('Will' || 'Smith')
+// Will
+````
+- The `&&` operator works the other way around
+  - When a value to its left is something that converts to false it returns that value
+  - When the value to its left converts to true it returns the value on the right
+
+````javascript
+console.log(null && 'user')
+// null
+console.log('Will' && 'Smith')
+// Smith
+````
