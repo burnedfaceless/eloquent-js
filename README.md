@@ -12,6 +12,9 @@ Coding is a lot like learning guitar. You can sit down and learn all the theory 
 ## What am I doing?
 I am outlining the book with markdown files. For the code challenges at the end of chapter 02 and beyond I will be creating JavaScript files. These will be run using Node.js. On a side note, markdown is the best for documenting and outlining tech. I've documented APIs using markdown based apps like [Docusaurus.](https://www.npmjs.com/package/docusaurus) 
 
+## Coding the Exercises
+For coding these exercises I am not looking at any of the solutions or the hints. I am sometimes refactoring the exercises. Sometimes when I grab a snack after finishing one I come up with a better way to solve it. Feel free to look at Git Commit History to see some of the different approaces I took to solving the exercises in the book.
+
 
 ## Timeframe to Completion
 I started working on this book on April 20, 2022. I'm going to try and do about 1 hour a day, sometimes less sometimes more. I'll post the completed date when it's done.
