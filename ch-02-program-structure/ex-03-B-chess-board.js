@@ -58,11 +58,12 @@ const generateChessBoardString = value => {
 }
 
 const main = () => {
-  readline.question('The width and height of this square is set to 8 in any direction. \n Please enter a custom value ', value => {
-    const numberValue = Number(value)
-    generateChessBoardString(numberValue)
-    readline.close()
-  })
+    do {
+      readline.question('The width and height of this square is set to 8 in any direction. \n Please enter a custom value ', value => {
+        (!isNaN(Number(value))) ? generateChessBoardString(Number(value)) : ''
+        readline.close()
+      })
+    } while (isNaN(Number(value)))
 }
 
 main()
