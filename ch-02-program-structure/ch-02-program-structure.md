@@ -199,3 +199,14 @@ counter += 1
 ````javascript
 const nextGuitarPurchase = 'Fender Stratocaster'
 ````
+
+## Comments
+
+````javascript
+// one line comment
+
+/*
+  This is a multi-line comment
+  can span multiple lines
+ */
+````
