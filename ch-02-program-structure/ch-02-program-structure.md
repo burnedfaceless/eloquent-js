@@ -69,3 +69,133 @@ prompt('Enter passcode')
 - Executing a function is called *invoking*, *calling* or *applying* it
 - A function is executed when you put parenthesis after an expression that produces a function
 value (usually the name of the binding that holds the function)
+
+## The `console.log` Function
+
+- Binding names cannot contain periods
+  - console.log is not a simple binding
+    - expression that retrieves the log method from the value held by the console binding
+
+## Return Values
+
+- When a function produces a value, it is said to return that value
+
+````javascript
+console.log(Math.min(2, 4) + 100)
+// 102
+````
+
+## Control Flow
+- When your program contains more than one statement they are executed from top to bottom
+
+## Conditional Execution
+ - uses the `if` keyword to selectively execute or not execute code
+
+## While and Do Loops
+
+### While Loop
+
+````javascript
+let number = 0
+while (number <= 12) {
+  console.log(number)
+  number += 2
+}
+// 0
+// 2
+// ... etcetera
+````
+- The code below calculates and shows the value of 2<sup>10</sup>
+````javascript
+let result = 1
+let counter = 0
+while (counter < 10) {
+  result *= 2
+  counter++
+}
+console.log(result)
+// 1024
+````
+
+### Do Loop
+
+````javascript
+let yourName
+do {
+  yourName = prompt('Who are you?')
+} while (!yourName)
+
+console.log(yourName)
+````
+
+### For Loops
+
+````javascript
+for (let number = 0; number <= 12; number += 2) {
+  console.log(number)
+}
+// 0
+// 2
+// ... etecetra 
+````
+
+- The code below calculates and shows the value of 2<sup>10</sup>
+
+````javascript
+let result = 1
+for (let counter = 0; counter < 10; counter++) {
+  result *= 2
+}
+console.log(result)
+// 1024
+````
+
+## Breaking Out of A Loop
+
+- In addition to the lopping condition producing `false`, you can end a loop with the `break` statement
+- The intention below uses the break statement to end an intentional infinite loop
+
+````javascript
+for (let number = 18; true; number++) {
+  if (number % 7 === 0) {
+    console.log(number)
+    break
+  }
+}
+````
+
+## Updating Bindings Succinctly
+
+````javascript
+counter = counter + 1
+counter += 1  
+````
+- Similar operands: `*=`, `-=`
+- `counter += 1` `counter++`
+- `counter -= 1` `counter--`
+
+## Dispatching on a Value With Switch
+
+````javascript
+  switch (prompt('What is the weather like?')) {
+  case 'rainy':
+    console.log('Remember to bring an umbrella.')
+    break
+  case 'sunny':
+    console.log('Dress lightly')
+    break
+  case 'cloudy':
+    console.log('Go outside.')
+    break
+  default:
+    console.log('Unknown weather type!')
+}
+````
+
+## Capitalization
+
+- JavaScript convention is to use camelcase
+
+````javascript
+const nextGuitarPurchase = 'Fender Stratocaster'
+````
