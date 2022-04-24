@@ -163,3 +163,17 @@ console.log(null && 'user')
 console.log('Will' && 'Smith')
 // Smith
 ````
+
+## JavaScript Truthy and Falsy Values - taken from MDN
+- JavaScript uses type conversion to to coerce any value into a boolean for contexts that require it, 
+like a loop or conditional
+
+### Truthy Values
+- a truthy value is a value that is considered true when encountered in a boolean contect
+- all values are designed as truthy unless explicitly reserved as a falsy variable
+- [Truthy Values - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+
+### Falsy Values
+- a falsy value is a value that is considered false when encountered in a boolean context
+- There are a short number of these values written at the table linked below
+- [Falsy Values - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
