@@ -18,7 +18,8 @@ const readline = require('readline').createInterface({
  * @desc This function generates a single row. There are two variations - the odd rows
  * and the even rows so it takes the rowType as a parameter and generates the correct
  * row
- * @param rowType - this is whether the row is an odd or even row
+ * @param rowType - must be even or odd
+ * @param value - the number of columns in a row
  * @returns {string} returns one row
  **************************************************************************************/
 
@@ -40,13 +41,14 @@ const generateRow = (value, rowType) => {
 
 /***************************************************************************************
  * @desc This function loops and concatenates rows to the chessboard string.
+ * @param value - the number of rows
  * @returns {string} returns one row
  **************************************************************************************/
 
 const generateChessBoardString = value => {
   try {
     let string = '\n'
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < value; i++) {
       string += (i === 0 || i % 2 === 0) ? generateRow(value, 'even') : generateRow(value,'odd')
       string += '\n'
     }
@@ -58,12 +60,12 @@ const generateChessBoardString = value => {
 }
 
 const main = () => {
-    do {
-      readline.question('The width and height of this square is set to 8 in any direction. \n Please enter a custom value ', value => {
-        (!isNaN(Number(value))) ? generateChessBoardString(Number(value)) : ''
-        readline.close()
-      })
-    } while (isNaN(Number(value)))
+  readline.question('The width and height of this square is set to 8 in any direction. \n Please enter a custom value ', value => {
+    generateChessBoardString(Number(value))
+    readline.close()
+  })
 }
 
 main()
+
+
