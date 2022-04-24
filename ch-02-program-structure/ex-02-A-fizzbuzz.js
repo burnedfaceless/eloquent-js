@@ -14,7 +14,7 @@ for (let i = 0; i < 100; i++) {
   output = (output % 3 === 0) ? 'Fizz' : output
   // if output is still a number, it is not divisible by 3...
   if (typeof output === 'number')
-    // ...if it is divisible by 5 changer output to 'Buzz'
+    // ...if it is divisible by 5 change output to 'Buzz'
     output = (output % 5 === 0) ? 'Buzz' : output
   // write whatever value you ended up with
   console.log(output)
