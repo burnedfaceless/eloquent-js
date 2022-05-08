@@ -1,0 +1,23 @@
+{
+  "name": "eloquent-js",
+  "version": "1.0.0",
+  "description": "![Eloquent JavaScript, 3rd Edition Cover](https://img.thriftbooks.com/api/images/i/m/42764526778A774ED86D6BBCD3B90ABA2DD98032.jpg)",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burnedfaceless/eloquent-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burnedfaceless/eloquent-js/issues"
+  },
+  "homepage": "https://github.com/burnedfaceless/eloquent-js#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
