@@ -7,15 +7,9 @@
  * For numbers divisible by 5 (and not 3) print "Buzz" instead.
  ***************************************************************************************/
 
-for (let i = 0; i < 100; i++) {
-  // assign a value which will go from 1 to 100 chronologically to the output binding
-  let output = i + 1
-  // if that number is divisible by 3, change output to 'Fizz'
-  output = (output % 3 === 0) ? 'Fizz' : output
-  // if output is still a number, it is not divisible by 3...
-  if (typeof output === 'number')
-    // ...if it is divisible by 5 change output to 'Buzz'
-    output = (output % 5 === 0) ? 'Buzz' : output
-  // write whatever value you ended up with
+for (let i = 1; i <= 100; i++) {
+  // if number is divisible by 3, set output to 'Fizz'
+  // else if it's divisible by 5, set output to 'Buzz', else print the number
+  const output = (i % 3 === 0) ? 'Fizz' : (i % 5 === 0) ? 'Buzz' : i
   console.log(output)
 }
