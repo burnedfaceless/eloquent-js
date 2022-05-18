@@ -60,7 +60,7 @@ const generateChessBoardString = value => {
 }
 
 const main = () => {
-  readline.question('The width and height of this square is set to 8 in any direction. \n Please enter a custom value ', value => {
+  readline.question('The width and height of this square is set to 8 in any direction. \nPlease enter a custom value ', value => {
     generateChessBoardString(Number(value))
     readline.close()
   })

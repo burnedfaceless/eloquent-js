@@ -39,7 +39,7 @@ const generateRow = rowType => {
 const generateChessBoardString = () => {
   try {
     let string = ''
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 8; i++) {
       string += (i === 0 || i % 2 === 0) ? generateRow('even') : generateRow('odd')
       string += '\n'
     }
