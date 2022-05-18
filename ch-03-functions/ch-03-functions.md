@@ -138,11 +138,53 @@ const horn = () => {
 }
 ````
 - When there is only one parameter name, the parentheses around the parameter can be omitted
-- If the body is a signle expression, rather than a block in braces, that expression will be returned
+- If the body is a single expression, rather than a block in braces, that expression will be returned
 from the function
 - The two function definitions below are equivalent
 
 ````javascript
 const square1 = (x) => { return x * x }
 const square2 = x => x * x
+````
+
+## Optional Arguments
+
+The below code is allowed and executes without any problems
+
+````javascript
+const square = x => x * x
+console.log(square(4, true, 'hedgehog'))
+// 16
+````
+- If you pass too many arguments, the extra ones are ignored
+- If you pass too few arguments the missing parameters are assigned the value `undefined`
+- The upside to this is that you can create a function with different amounts of arguments (see below)
+
+````javascript
+const minus = (a, b) => {
+  if (b === undefined) return - a
+  else return a - b
+}
+
+console.log(minus(10))
+// -10
+console.log(minus(10, 5))
+// 5
+````
+- If you write an `=` operator after an argument followed by an expression, that value will replace the argument 
+when it is not given
+
+````javascript
+const power = (base, exponent = 2) => {
+  let result = 1
+  for (let count = 1; count < exponent; count++) {
+    result *= base
+  }
+  return result
+}
+
+console.log(power(4))
+// 16
+console.log(power(2, 6))
+// 64
 ````
