@@ -9,7 +9,7 @@
 
 /***************************************************************************************
  * @desc This function generates a single row. There are two variations - the odd rows
- * and the even rows so it takes the rowType as a parameter and generates the correct
+ * and the even rows, so it takes the rowType as a parameter and generates the correct
  * row
  * @param rowType - this is whether the row is an odd or even row
  * @returns {string} returns one row
@@ -45,7 +45,6 @@ const generateChessBoardString = () => {
     }
     return string
   } catch(e) {
-    console.log('\n\nYou are in the generateChessBoardString() function \n\n')
     console.log(e)
   }
 }
